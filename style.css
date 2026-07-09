@@ -1,1 +1,138 @@
 /* Add you CSS here */
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Body ---------- */
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+    background:linear-gradient(to right,#d9d9d9,#ffffff);
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-size:4.5rem;
+    color:#c00000;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:1.3rem;
+    margin-bottom:35px;
+}
+
+/* ---------- Button ---------- */
+
+.button{
+    display:inline-block;
+    padding:14px 30px;
+    background:#c00000;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#8f0000;
+}
+
+/* ---------- Background Section ---------- */
+
+.content-background{
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.60),
+            rgba(255,255,255,0.60)
+        ),
+        url("img/Leaves.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 60px 0;
+}
+
+/* ---------- Sections ---------- */
+
+section{
+    width:80%;
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+
+    background:rgba(255,255,255,0.75);
+    padding:40px;
+    border-radius:15px;
+}
+
+section h2{
+    font-size:2.5rem;
+    color:#c00000;
+    margin-bottom:25px;
+}
+
+section p{
+    font-size:1.1rem;
+    margin-bottom:20px;
+}
+
+/* ---------- Skills ---------- */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(3, 200px);
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+}
+
+.skill{
+    background:white;
+    border:2px solid silver;
+    border-radius:8px;
+    padding:20px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:#c00000;
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    background:rgba(192,0,0,0.9);
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:80px;
+}
